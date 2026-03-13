@@ -1,0 +1,140 @@
+body {
+  background-image: url(bg-login-2.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 1080;
+  width: 1920;
+}
+
+* {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.bg-color {
+  background-color: black;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  opacity: .7;
+}
+
+.login-form {
+  background-color: rgb(35, 35, 35);
+  border-radius: 5px;
+  height: 300px;
+  width: 250px;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-color: white;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-left-width: 2px;
+  border-right-width: 2px;
+}
+
+.top-part , .middle-part , .bottom-part {
+  margin-top: 0px;
+  bottom: 0px;
+}
+
+
+
+.top-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.middle-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+div.middle-part p {
+  color: lightgrey;
+}
+
+.acc-name-text {
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+
+.acc-name-input {
+  text-align: center;
+  color: grey;
+  width: 175px;
+  height: 20px;
+  border-radius: 20px;
+  border-width: 0px;
+  box-shadow: 0px 0px 10px black;
+  transition: .5s;
+}
+
+.acc-name-input:hover {
+  box-shadow: 0px 0px 15px black;
+}
+
+.acc-pass-text {
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+
+.acc-pass-input {
+  text-align: center;
+  color: grey;
+  width: 175px;
+  height: 20px;
+  border-radius: 20px;
+  border-width: 0px;
+  box-shadow: 0px 0px 10px black;
+  transition: .5s;
+  margin-bottom: 50px;
+}
+
+.acc-pass-input:hover {
+  box-shadow: 0px 0px 15px black;
+}
+
+.bottom-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-button {
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: black;
+  box-shadow: 0px 0px 10px grey;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.login-button:hover {
+  transform: scale(1.05) translateY(-2px);
+}
+
+.login-button:active {
+  transform: scale(0.95);
+}
