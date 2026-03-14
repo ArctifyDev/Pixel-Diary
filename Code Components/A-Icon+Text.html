@@ -1,0 +1,45 @@
+<!-- Icon + Text Animation Start -->
+      <div class="icon-hover-div">
+        <img src="/assets/icon-home.svg" class="home-icon">
+        <p class="icon-hover-text">
+          Home
+        </p>
+      </div>
+<!-- Icon + Text Animation End -->
+
+<style>
+/* ICON + TEXT ANIMATION START */
+.icon-hover-div {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.icon-hover-text {
+  position: absolute;
+  opacity: 0;
+  bottom: -30px;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.icon-hover-div:hover .icon-hover-text {
+  opacity: 1;
+}
+/* ICON + TEXT ANIMATION END  */
+</style>

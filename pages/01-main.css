@@ -54,16 +54,40 @@ body {
   text-align: center;
 }
 
-.home-icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 1px;
+/* ICON + TEXT ANIMATION START */
+.icon-hover-div {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  
 }
 
-.home-icon-text {
+.icon {
+  width: 25px;
+  height: 25px;
   margin-right: 5px;
-  font-size: normal;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
 }
+
+.icon-hover-text {
+  position: absolute;
+  opacity: 0;
+  bottom: -30px;
+  font-size: 14px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.icon-hover-div:hover .icon-hover-text {
+  opacity: 1;
+}
+/* ICON + TEXT ANIMATION END  */
 
 .search-div {
   display: flex;
@@ -72,13 +96,13 @@ body {
 }
 
 .search-bar {
-  height: 20px;
-  width: 200px;
+  height: 25px;
+  width: 225px;
   border-style: solid;
   border-width: 1px;
   border-right-width: 0px;
   box-sizing: border-box;
-  font-size: x-small;
+  font-size: small;
   padding-left: 5px;
   color: rgb(144, 144, 144);
 }
@@ -88,7 +112,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: transparent;
-  height: 20px;
+  height: 25px;
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
@@ -97,4 +121,10 @@ body {
 
 .search-bar-icon {
   height: 15px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+
 }
