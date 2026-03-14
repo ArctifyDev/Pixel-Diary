@@ -54,25 +54,35 @@ body {
   text-align: center;
 }
 
-/* ICON + TEXT ANIMATION START */
+/* A-ICON + TEXT START */
 .icon-hover-div {
+  height: 25px;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
   text-align: center;
   justify-content: center;
   position: relative;
-  
+  transition: 0.3s ease;
+  margin-right: 5px;
 }
 
-.icon {
+.nav-icon {
   width: 25px;
   height: 25px;
-  margin-right: 5px;
+  border-radius: 3px;
   box-sizing: border-box;
+  cursor: pointer;
   border-style: solid;
   border-width: 1px;
-  cursor: pointer;
+}
+
+.icon-hover-div:hover {
+  transform: scale(1.05);
+}
+
+.icon-hover-div:active {
+  transform: scale(0.90);
 }
 
 .icon-hover-text {
@@ -81,13 +91,14 @@ body {
   bottom: -30px;
   font-size: 14px;
   pointer-events: none;
+  white-space: nowrap;
   transition: 0.3s ease;
 }
 
 .icon-hover-div:hover .icon-hover-text {
   opacity: 1;
 }
-/* ICON + TEXT ANIMATION END  */
+/* A-ICON + TEXT END */
 
 .search-div {
   display: flex;
@@ -104,6 +115,7 @@ body {
   box-sizing: border-box;
   font-size: small;
   padding-left: 5px;
+  border-color: grey;
   color: rgb(144, 144, 144);
 }
 
@@ -116,15 +128,27 @@ body {
   border-style: solid;
   border-width: 1px;
   box-sizing: border-box;
+  border-color: grey;
   cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-bar-icon-button:hover {
+  transform: scale(1.05);
+  border-color: black;
+}
+
+.search-bar-icon-button:active {
+  transform: scale(0.90);
 }
 
 .search-bar-icon {
   height: 15px;
 }
 
+/* RIGHT SECTION */
+
 .right-section {
   display: flex;
   align-items: center;
-
 }

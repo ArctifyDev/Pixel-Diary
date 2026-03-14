@@ -1,32 +1,46 @@
-<!-- Icon + Text Animation Start -->
-      <div class="icon-hover-div">
-        <img src="/assets/icon-home.svg" class="home-icon">
-        <p class="icon-hover-text">
-          Home
-        </p>
-      </div>
-<!-- Icon + Text Animation End -->
+<!-- NOTE: JUST FILL IN THE SRC AND CHANGE LABEL -->
+
+<!-- A-ICON + TEXT START -->
+<div class="icon-hover-div">
+  <img class="nav-icon" src="" />
+  <p class="icon-hover-text">
+    Label
+  </p>
+</div>
+<!-- A-ICON + TEXT END -->
+
 
 <style>
-/* ICON + TEXT ANIMATION START */
+
+/* A-ICON + TEXT START */
 .icon-hover-div {
+  height: 25px;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
   text-align: center;
   justify-content: center;
   position: relative;
-  
+  transition: 0.3s ease;
+  margin-right: 5px;
 }
 
-.icon {
+.nav-icon {
   width: 25px;
   height: 25px;
-  margin-right: 5px;
+  border-radius: 3px;
   box-sizing: border-box;
+  cursor: pointer;
   border-style: solid;
   border-width: 1px;
-  cursor: pointer;
+}
+
+.icon-hover-div:hover {
+  transform: scale(1.05);
+}
+
+.icon-hover-div:active {
+  transform: scale(0.90);
 }
 
 .icon-hover-text {
@@ -35,11 +49,13 @@
   bottom: -30px;
   font-size: 14px;
   pointer-events: none;
+  white-space: nowrap;
   transition: 0.3s ease;
 }
 
 .icon-hover-div:hover .icon-hover-text {
   opacity: 1;
 }
-/* ICON + TEXT ANIMATION END  */
+/* A-ICON + TEXT END */
+
 </style>
