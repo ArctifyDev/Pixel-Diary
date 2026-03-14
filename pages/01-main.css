@@ -1,0 +1,31 @@
+body {
+  background-image: url(/assets/bg-main.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 1080;
+  width: 1920;
+}
+
+* {
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(35, 35, 35);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left-section {
+  display: flex;
+  
+}

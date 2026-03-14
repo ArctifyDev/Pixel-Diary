@@ -1,5 +1,5 @@
 body {
-  background-image: url(bg-login-2.gif);
+  background-image: url(/assets/bg-login-2.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,6 +11,8 @@ body {
 * {
     font-family: "Pixelify Sans", sans-serif;
 }
+
+/* LOGIN PAGE */
 
 .bg-color {
   background-color: black;
@@ -48,8 +50,6 @@ body {
   margin-top: 0px;
   bottom: 0px;
 }
-
-
 
 .top-part {
   display: flex;
