@@ -1,0 +1,202 @@
+<div class="header">
+
+    <!-- LEFT SECTION -->
+    <div class="left-section">
+      <img src="" class="pixel-logo"> <!-- CHANGE: logo image src -->
+      <p class="pixel-logo-text">App Name</p> <!-- CHANGE: app name -->
+    </div>
+
+    <!-- MIDDLE SECTION -->
+    <div class="middle-section">
+      <!-- ADD/REMOVE: icon + text blocks as needed -->
+      <div class="icon-hover-div">
+        <img class="nav-icon" src="" /> <!-- CHANGE: icon src -->
+        <p class="icon-hover-text">Label</p> <!-- CHANGE: hover label -->
+      </div>
+      <div class="search-div">
+        <input type="text" placeholder="Search" class="search-bar"> <!-- CHANGE: placeholder text -->
+        <button class="search-bar-icon-button">
+          <img src="" class="search-bar-icon"> <!-- CHANGE: search icon src -->
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+      <!-- ADD/REMOVE: icon + text blocks as needed -->
+      <div class="icon-hover-div">
+        <img class="nav-icon" src="" /> <!-- CHANGE: profile icon src -->
+        <p class="icon-hover-text">Label</p> <!-- CHANGE: hover label -->
+      </div>
+      <p class="profile-name">Username</p> <!-- CHANGE: profile name -->
+      <div class="icon-hover-div">
+        <img class="nav-icon" src="" /> <!-- CHANGE: icon src -->
+        <p class="icon-hover-text">Label</p> <!-- CHANGE: hover label -->
+      </div>
+      <div class="icon-hover-div">
+        <img class="nav-icon" src="" /> <!-- CHANGE: icon src -->
+        <p class="icon-hover-text">Label</p> <!-- CHANGE: hover label -->
+      </div>
+    </div>
+
+  </div>
+
+
+<style>
+  body {
+  background-image: url(); /* CHANGE: background image path */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 1080px;
+  width: 1920px;
+}
+
+* {
+  font-family: sans-serif; /* CHANGE: your preferred font */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: lightgray; /* CHANGE: header background color */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px; /* CHANGE: header height */
+  column-gap: 10px;
+  box-sizing: border-box;
+  padding-left: 5px;
+  padding-right: 5px;
+  justify-content: space-between;
+}
+
+/* LEFT SECTION */
+.left-section {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.pixel-logo {
+  width: 30px; /* CHANGE: logo size */
+  height: 30px;
+}
+
+.pixel-logo-text {
+  font-size: large; /* CHANGE: logo text size */
+}
+
+/* MIDDLE SECTION */
+.middle-section {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* A-ICON + TEXT START */
+.icon-hover-div {
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s ease;
+  margin-right: 5px; /* CHANGE: spacing between icons */
+}
+
+.nav-icon {
+  width: 25px; /* CHANGE: icon size */
+  height: 25px;
+  border-radius: 3px; /* CHANGE: icon border radius */
+  box-sizing: border-box;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.icon-hover-div:hover {
+  transform: scale(1.05); /* CHANGE: hover scale amount */
+}
+
+.icon-hover-div:active {
+  transform: scale(0.90); /* CHANGE: active/click scale amount */
+}
+
+.icon-hover-text {
+  position: absolute;
+  opacity: 0;
+  bottom: -30px; /* CHANGE: distance of text below icon */
+  font-size: 14px; /* CHANGE: hover text size */
+  pointer-events: none;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.icon-hover-div:hover .icon-hover-text {
+  opacity: 1;
+}
+/* A-ICON + TEXT END */
+
+/* SEARCH */
+.search-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  height: 25px;
+  width: 225px; /* CHANGE: search bar width */
+  border-style: solid;
+  border-width: 1px;
+  border-right-width: 0px;
+  box-sizing: border-box;
+  font-size: small;
+  padding-left: 5px;
+  border-color: grey; /* CHANGE: search bar border color */
+  color: rgb(144, 144, 144); /* CHANGE: search bar text color */
+}
+
+.search-bar-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* CHANGE: search button background */
+  height: 25px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+  border-color: grey; /* CHANGE: search button border color */
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search-bar-icon-button:hover {
+  transform: scale(1.05);
+  border-color: black; /* CHANGE: search button hover border color */
+}
+
+.search-bar-icon-button:active {
+  transform: scale(0.90);
+}
+
+.search-bar-icon {
+  height: 15px; /* CHANGE: search icon size */
+}
+
+/* RIGHT SECTION */
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-name {
+  margin-right: 10px; /* CHANGE: spacing after profile name */
+}
+</style>
