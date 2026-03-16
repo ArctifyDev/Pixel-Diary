@@ -410,3 +410,24 @@ body {
 }
 
 /* PROGRESS BAR INFORMATION V3 END */
+
+/* CREDITS */
+.credits-div {
+  position: absolute;
+  bottom: 5px;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-color: rgb(255, 178, 178);
+}
+
+.credits-text-top {
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.credits-text-bottom {
+  margin-top: 2px;
+  font-weight: bold;
+  color: orangered;
+  font-size: 16px;
+}
