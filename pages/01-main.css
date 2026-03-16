@@ -225,6 +225,7 @@ body {
 }
 /* A-ICON + TEXT END V2 */
 
+/* PROFILE INFORMATION */
 
 .profile-info-div {
   display: flex;
@@ -252,6 +253,118 @@ body {
 }
 
 .profile-rank {
-  margin-top: 2px;
+  margin-top: 1px;
   color: red;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-color: rgb(255, 178, 178);
 }
+
+/* END OF PROFILE INFORMATION */
+/* PROGRESS BAR INFORMATION V1 */
+
+.progress-bar-div-v1 {
+  position: relative;
+  height: 25px;
+  width: 150px;
+  background-color: lightblue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.progress-bar-fill-v1 {
+  height: 100%;
+  width: 80%;
+  background-color: brown;
+  border-radius: 5px;
+}
+
+.progress-bar-text-v1 {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: beige;
+  
+}
+
+.progress-bar-type-v1 {
+  color: brown;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* PROGRESS BAR INFORMATION V1 END */
+
+/* PROGRESS BAR INFORMATION V2 */
+
+.progress-bar-div-v2 {
+  position: relative;
+  height: 25px;
+  width: 150px;
+  background-color: lightblue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.progress-bar-fill-v2 {
+  height: 100%;
+  width: 30%;
+  background-color: brown;
+  border-radius: 5px;
+}
+
+.progress-bar-text-v2 {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: beige;
+  
+}
+
+.progress-bar-type-v2 {
+  color: brown;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* PROGRESS BAR INFORMATION V2 END */
+
+/* PROGRESS BAR INFORMATION V3 */
+
+.progress-bar-div-v3 {
+  position: relative;
+  height: 25px;
+  width: 150px;
+  background-color: lightblue;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.progress-bar-fill-v3 {
+  height: 100%;
+  width: 30%;
+  background-color: brown;
+  border-radius: 5px;
+}
+
+.progress-bar-text-v3 {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: beige;
+  
+}
+
+.progress-bar-type-v3 {
+  color: brown;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* PROGRESS BAR INFORMATION V3 END */
