@@ -191,7 +191,6 @@ body {
   justify-content: center;
   position: relative;
   transition: 0.3s ease;
-  margin-right: 5px;
 }
 
 .nav-icon-v2 {
@@ -225,3 +224,34 @@ body {
   opacity: 1;
 }
 /* A-ICON + TEXT END V2 */
+
+
+.profile-info-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.profile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  border-style: solid;
+  border-width: 1px;
+  box-sizing: border-box;
+}
+
+.profile-name {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.profile-rank {
+  margin-top: 2px;
+  color: red;
+}
