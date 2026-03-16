@@ -1,15 +1,30 @@
 body {
+  margin: 0;
   background-image: url(/assets/bg-main.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 1080px;
-  width: 1920px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 * {
     font-family: "Pixelify Sans", sans-serif;
+}
+
+.game-screen {
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-wrapper {
+  transform-origin: center;
 }
 
 .header {
@@ -375,7 +390,7 @@ body {
 
 .progress-bar-fill-v3 {
   height: 100%;
-  width: 30%;
+  width: 10%;
   background-color: brown;
   border-radius: 5px;
 }
