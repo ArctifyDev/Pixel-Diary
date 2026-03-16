@@ -271,6 +271,16 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 25px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.progress-bar-div-v1:hover {
+  transform: translateY(-3px);
+}
+
+.progress-bar-div-v1:active {
+  transform: scale(0.90);
 }
 
 .progress-bar-fill-v1 {
@@ -286,7 +296,6 @@ body {
   left: 5px;
   transform: translateY(-50%);
   color: beige;
-  
 }
 
 .progress-bar-type-v1 {
@@ -307,6 +316,16 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 25px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.progress-bar-div-v2:hover {
+  transform: translateY(-3px);
+}
+
+.progress-bar-div-v2:active {
+  transform: scale(0.90);
 }
 
 .progress-bar-fill-v2 {
@@ -322,7 +341,6 @@ body {
   left: 5px;
   transform: translateY(-50%);
   color: beige;
-  
 }
 
 .progress-bar-type-v2 {
@@ -343,6 +361,16 @@ body {
   border-radius: 5px;
   box-sizing: border-box;
   margin-bottom: 25px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.progress-bar-div-v3:hover {
+  transform: translateY(-3px);
+}
+
+.progress-bar-div-v3:active {
+  transform: scale(0.90);
 }
 
 .progress-bar-fill-v3 {
@@ -358,7 +386,6 @@ body {
   left: 5px;
   transform: translateY(-50%);
   color: beige;
-  
 }
 
 .progress-bar-type-v3 {
